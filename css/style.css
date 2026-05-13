@@ -1,0 +1,74 @@
+
+         body {
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            background-color: LightCyan;      
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            background-color: MediumTurquoise;        
+            max-width: 750px;               
+            margin: auto;                   
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px; 
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        /* KHUNG GIỚI THIỆU CÓ AVATAR */
+        .intro-box {
+            border: 2px solid #3498db;     
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 10px;
+            background-color: #ebf5fb;     
+            display: flex; 
+            align-items: center; 
+            gap: 20px; 
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%; 
+            border: 3px solid white;
+            object-fit: cover;
+        }
+
+        .intro-text {
+            flex: 1;
+        }
+
+        .intro-text h3 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;      
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;      
+            color: white;               
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-left: 5px solid #3498db; 
+            padding-left: 10px;
+            margin-top: 30px;
+        }
