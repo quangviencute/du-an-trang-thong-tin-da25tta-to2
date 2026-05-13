@@ -16,27 +16,26 @@
         }
 
         h1 {
-            color: #2c3e50;
+            color: DarkBlue;
             margin-bottom: 5px;
         }
 
-        /* KHUNG GIỚI THIỆU CÓ AVATAR */
+       
         .intro-box {
-            border: 2px solid #3498db;     
+            border: 2px solid DarkBlue;     
             padding: 20px;
             margin-top: 15px;
             border-radius: 10px;
             background-color: #ebf5fb;     
             display: flex; 
             align-items: center; 
-            gap: 20px; 
         }
 
         .avatar {
             width: 130px;
             height: 130px;
             border-radius: 50%; 
-            border: 3px solid white;
+            border: 3px gray;
             object-fit: cover;
         }
 
@@ -62,13 +61,13 @@
         }
 
         th {
-            background-color: #3498db;      
+            background-color: DarkBlue;      
             color: white;               
         }
 
         h2 {
             color: #2c3e50;
-            border-left: 5px solid #3498db; 
+            border-left: 5px solid DarkBlue; 
             padding-left: 10px;
             margin-top: 30px;
         }
