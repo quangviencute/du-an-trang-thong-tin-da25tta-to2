@@ -1,0 +1,52 @@
+*{
+margin:0;
+padding:0;
+font-family:Arial,Helvetica,sans-serif;
+font-size:14pt;
+line-height:1.5;
+color:Black;
+border-radius: 9px;		
+
+}
+body{
+	background-color:LightCyan;
+div.container{
+margin:100px 600px;
+background-color:LightBlue;
+padding:15px 15px;
+border-radius: 9px;		
+}
+
+#title{
+text-transform:uppercase;
+font-size:21px;
+letter-spacing:4px;
+text-align:center;
+
+}
+label{
+display:block;
+}
+form#frmLogin{
+background-color:LightSteelBlue;
+margin:30px;
+padding:60px;
+max-width:650px;
+border-radius: 9px;		
+}
+div.form-group{
+width:600px;
+border-radius: 9px;		
+}
+input.form-control{
+width:80%;
+margin:7px 0px;
+border-radius: 9px;		
+}
+
+input.button{
+padding:2px;
+background-color:LightSlateGray;
+width:600px;
+border-radius: 9px;		
+}
