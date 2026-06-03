@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang vật phẩm</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style4.css">
+</head>
+<body>
+    <div class="container">
+        <div id="product-list">
+        </div>
+    </div>
+    <script>
+        //Xac dinh khung chua product-list
+        const listProducts = document.getElementById("product-list");
+        //tao 1 container co class ="item"
+        const item = document.createElement("div");
+        item.setAttribute("class","item");
+        //tao 2 khung chua hinh anh va thong tin
+        // tao 1 container chua hinh anh co class="image"
+        const containerImage = document.createElement("div");
+        containerImage.setAttribute("class","image");
+        //tao anh
+        const img = document.createElement("img");
+        img.setAttribute("src","../assets/images/vecna.jpg");
+        img.setAttribute("alt","Vecna ");
+        img.setAttribute("style","width:100%;max-width:150px ");
+         img.setAttribute("class","card-img-top rounded-circle");
+        //dua vao khung chu anh
+        containerImage.appendChild(img);
+        // tao 1 container chua thong tin san pham co class="info"
+        const containerInfo = document.createElement("div");
+        containerInfo.setAttribute("class","info card-body");
+        //tao <p> chua ten san pham
+            const nameProduct = document.createElement("p");
+            nameProduct.innerHTML= "Mô hình Vecna";
+            nameProduct.setAttribute("class","card-title text-danger")
+        //tao <p> chua gia san pham
+            const price = document.createElement("p");
+            price.innerHTML = "792k/1 mô hình";
+            //tao <p> chua mo ta san pham 
+                const description = document.createElement("p");
+                description.innerHTML="Mô hình trong phim Stranger Things.Vecna , do Jamie Campbell Bower thủ vai , là nhân vật chính và phản diện trong mùa thứ tư và thứ năm của Stranger Things . Anh ta cũng xuất hiện trong Stranger Things VR , và là nhân vật chính diện trong Stranger Things: The First Shadow .";
+            //gan <a> chua lien ket 
+                const linkProduct = document.createElement("a");
+                linkProduct.innerHTML ="Xem chi tiết sản phẩm";
+                linkProduct.setAttribute("href","https://shopee.vn/M%C3%B4-h%C3%ACnh-Funko-POP!-Television-Stranger-Things-Season-5-Vecna-1806-i.194849464.47154787441?extraParams=%7B%22display_model_id%22%3A282338865845%2C%22model_selection_logic%22%3A3%7D");
+
+            //gan 4 con vao khung chua info
+            containerInfo.appendChild(nameProduct);
+            containerInfo.appendChild(price);
+            containerInfo.appendChild(description);
+            containerInfo.appendChild(linkProduct);
+
+            //Thêm khung chứa image vào item
+            item.appendChild(containerImage);
+            item.appendChild(containerInfo);
+
+            //Thêm item vào list product
+            listProducts.appendChild(item);
+        </script>
+    </body>
+</html>

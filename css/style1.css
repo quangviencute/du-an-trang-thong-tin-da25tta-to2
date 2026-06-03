@@ -9,7 +9,12 @@ border-radius: 9px;
 
 }
 body{
-	background-color:LightCyan;
+background-image: url('../assets/images/langgom.jpg'); 
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-color:LightCyan;
 div.container{
 margin:100px 600px;
 background-color:LightBlue;
