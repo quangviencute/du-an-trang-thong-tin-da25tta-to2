@@ -29,7 +29,7 @@ body {
     border-radius: 16px;
     padding: 24px;
     width: 100%;
-    max-width: 320px; /* Độ rộng lý tưởng cho 1 card dọc */
+    max-width: 260px; /* Độ rộng lý tưởng cho 1 card dọc */
     display: flex;
     flex-direction: column; /* Đổi sang dạng dọc cho giống thẻ Card */
     align-items: center;
@@ -111,7 +111,7 @@ body {
     border-radius: 8px;
     font-size: 0.95rem;
     font-weight: 600;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
 }
 
@@ -123,4 +123,20 @@ body {
 
 .info a:active {
     transform: translateY(1px);
+}
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  
+    height: 100vh; 
+    object-fit: cover; 
+    z-index: -1; 
+    pointer-events: none; 
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: transparent;
 }

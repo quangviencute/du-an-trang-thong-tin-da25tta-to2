@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<title>Trang số 2 </title>
+<meta charset ="utf-8">
+<link rel="stylesheet" href="../css/style1.css">
+</head>
+<body>
+<div class = "container">
+    <img src = "" alt = "" id = "image">
+    <p id="name"></p>
+    <p id="price"></p>
+    <p id="description"></p>
+
+</div>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get(`id`);
+    const foundProduct = products.find(obj => obj.id === productId);
+        if (foundProduct) {
+            document.getElementById('name').innerText = foundProduct.name;
+            document.getElementById('price').innerText = foundProduct.price + "k/túi";
+            document.getElementById('description').innerText = foundProduct.description;
+            document.getElementById('image').src = foundProduct.image;
+            document.getElementById('image').alt = foundProduct.name;
+        } else {
+            // Trường hợp URL bậy bạ hoặc không tìm thấy ID phù hợp
+            document.getElementById("container").innerHTML = `<h2>Sản phẩm không tồn tại hoặc đã bị xóa!</h2><a href="../index.html">Quay lại trang chủ</a>`;
+        }
+</script>
+
+</body>
+</html>
