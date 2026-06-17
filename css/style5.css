@@ -1,0 +1,22 @@
+/* Hiệu ứng chữ đỏ neon phát sáng giống logo Stranger Things */
+#name {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5);
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Tùy chỉnh bo góc và viền cho khung Card sản phẩm */
+.card {
+    border: 2px solid #dc3545; /* Viền đỏ */
+    background-color: rgba(20, 20, 20, 0.85) !important; /* Nền tối trong suốt */
+    backdrop-filter: blur(5px); /* Làm mờ nhẹ phía sau nếu có video nền */
+}
+
+/* Hiệu ứng zoom nhẹ khi rê chuột vào ảnh mô hình */
+#image {
+    transition: transform 0.3s ease;
+}
+#image:hover {
+    transform: scale(1.03);
+}
