@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Quicksand:wght@500;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  color: #4a3e3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Video nền phía sau */
+#myVideo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: saturate(1.1) brightness(0.95);
+}
+
+h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: 2.5rem;
+  color: #2d5a27;
+  text-shadow: 2px 2px 0px #f5e6ca;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 15px 30px;
+  border-radius: 30px;
+  box-shadow: 0 8px 32px rgba(139, 115, 85, 0.15);
+  backdrop-filter: blur(4px);
+  border: 2px solid #e6d5b8;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 80%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột đều nhau */
+  gap: 20px;
+  max-width: 900px;
+  width: 90%;
+}
+
+/* Từng mục liên kết */
+li {
+  perspective: 1000px;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #5d4037;
+  background: linear-gradient(135deg, #fffdf6 0%, #f4ecd8 100%);
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #e6d5b8;
+  box-shadow:
+    0 6px 0px #d0b8a8,
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+li a:hover {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  color: #1b5e20;
+  border-color: #a5d6a7;
+  transform: translateY(-5px); /* Bay nhẹ lên trên */
+  box-shadow:
+    0 11px 0px #81c784,
+    0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+li a:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 3px 0px #81c784,
+    0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 480px) {
+  ul {
+    grid-template-columns: 1fr;
+  }
+}
