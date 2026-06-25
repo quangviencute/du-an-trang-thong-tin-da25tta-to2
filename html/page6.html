@@ -1,21 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-<meta charset="utf-8">
-<title> Tính diện tích hình chữ nhật</title>
-</head>
-<body>
-<script>
-let d = Number(prompt("Hãy nhập vào chiều dài "));
-let r = Number(prompt("Hãy nhập vào chiều rộng"));
-if(d<r)
-alert("Chiều dài phải nhỏ hơn chiều rộng");
-else
-if(d==r)
-alert("Trường hợp sít rịt :"+ d*r);
-else 
-alert("Diện tích hình chữ nhật là :" + d*r);
+  <head>
+    <meta charset="utf-8" />
+    <title>Tính diện tích hình chữ nhật</title>
+    <link rel="stylesheet" href="../css/style7.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Tính Diện Tích</h2>
 
-</script>
-</body>
+      <div class="input-group">
+        <label for="chieuDai">Chiều dài (số nguyên):</label>
+        <input type="number" id="chieuDai" placeholder="Nhập chiều dài..." />
+      </div>
+
+      <div class="input-group">
+        <label for="chieuRong">Chiều rộng (số nguyên):</label>
+        <input type="number" id="chieuRong" placeholder="Nhập chiều rộng..." />
+      </div>
+
+      <button onclick="tinhDienTich()">Tính ngay</button>
+
+      <div id="ketQua" class="result"></div>
+    </div>
+
+    <script>
+      function tinhDienTich() {
+        // Lấy giá trị từ ô input và ép kiểu số nguyên
+        let d = parseInt(document.getElementById("chieuDai").value, 10);
+        let r = parseInt(document.getElementById("chieuRong").value, 10);
+
+        let divKetQua = document.getElementById("ketQua");
+
+        // Hiển thị khung kết quả
+        divKetQua.style.display = "block";
+        divKetQua.className = "result"; // Reset class ban đầu
+
+        // 1. Kiểm tra hợp lệ
+        if (isNaN(d) || isNaN(r) || d <= 0 || r <= 0) {
+          divKetQua.innerText = "Vui lòng nhập các số nguyên dương hợp lệ!";
+          divKetQua.classList.add("error");
+        }
+        // 2. Kiểm tra logic d < r
+        else if (d < r) {
+          divKetQua.innerText = "Lỗi: Chiều dài không thể nhỏ hơn chiều rộng!";
+          divKetQua.classList.add("error");
+        }
+        // 3. Trường hợp bằng nhau (Hình vuông)
+        else if (d === r) {
+          divKetQua.innerText = "Đây là hình vuông! Diện tích: " + d * r;
+          divKetQua.classList.add("warning");
+        }
+        // 4. Trường hợp chuẩn (Hình chữ nhật)
+        else {
+          divKetQua.innerText = "Diện tích hình chữ nhật: " + d * r;
+          divKetQua.classList.add("success");
+        }
+      }
+    </script>
+  </body>
 </html>
