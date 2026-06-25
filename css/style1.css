@@ -1,57 +1,132 @@
-*{
-margin:0;
-padding:0;
-font-family:Arial,Helvetica,sans-serif;
-font-size:14pt;
-line-height:1.5;
-color:Black;
-border-radius: 9px;		
-
-}
-body{
-background-image: url('../assets/images/langgom.jpg'); 
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-background-color:LightCyan;
-div.container{
-margin:100px 600px;
-background-color:LightBlue;
-padding:15px 15px;
-border-radius: 9px;		
+/* Reset và định dạng chung mang nét mềm mại, hoài cổ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 14pt;
+  line-height: 1.5;
+  color: #4a3e3d; /* Màu nâu đậm ấm thay vì màu đen thuần túy */
 }
 
-#title{
-text-transform:uppercase;
-font-size:21px;
-letter-spacing:4px;
-text-align:center;
-
-}
-label{
-display:block;
-}
-form#frmLogin{
-background-color:LightSteelBlue;
-margin:30px;
-padding:60px;
-max-width:650px;
-border-radius: 9px;		
-}
-div.form-group{
-width:600px;
-border-radius: 9px;		
-}
-input.form-control{
-width:80%;
-margin:7px 0px;
-border-radius: 9px;		
+body {
+  /* Bạn có thể thay ảnh làng gốm bằng một ảnh anime đồng quê Ghibli nếu muốn */
+  background-image: url("../assets/images/langgom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #e8f1f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-input.button{
-padding:2px;
-background-color:LightSlateGray;
-width:600px;
-border-radius: 9px;		
+/* Container căn giữa màn hình mềm mại */
+div.container {
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.6); /* Trong suốt nhẹ như sương mai */
+  padding: 10px;
+  border-radius: 24px; /* Bo góc cực mềm mại theo style hoạt hình */
+  backdrop-filter: blur(5px); /* Làm mờ nhẹ nền phía sau */
+}
+
+/* Khung Form như một cuốn sổ nhỏ */
+form#frmLogin {
+  background-color: #fffdf9; /* Màu trắng kem ấm áp, dễ chịu */
+  padding: 40px 50px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  border: 2px solid #e6d5bc; /* Viền màu be nhẹ như giấy cũ */
+  box-shadow: 0 10px 25px rgba(139, 115, 85, 0.15); /* Đổ bóng mịn */
+}
+
+/* Tiêu đề tựa như tựa truyện */
+#title {
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #6e5a44;
+  font-weight: bold;
+}
+
+div.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 12pt;
+  margin-bottom: 8px;
+  color: #8c7a6b;
+  font-weight: 600;
+}
+
+input.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #dcd0c0;
+  background-color: #fcf9f2;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input.form-control:focus {
+  border-color: #a3b899;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(163, 184, 153, 0.2);
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.form-button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13pt;
+  transition: all 0.2s ease;
+}
+
+.btn-submit {
+  background-color: #87a987;
+  color: white;
+  box-shadow: 0 4px 0 #6b8e6b;
+}
+
+.btn-submit:hover {
+  background-color: #95b995;
+  transform: translateY(-2px);
+}
+
+.btn-submit:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.btn-reset {
+  background-color: #e2c2b9;
+  color: #5c4a42;
+  box-shadow: 0 4px 0 #c9a79e;
+}
+
+.btn-reset:hover {
+  background-color: #ead0c7;
+  transform: translateY(-2px);
+}
+
+.btn-reset:active {
+  transform: translateY(2px);
+  box-shadow: none;
 }

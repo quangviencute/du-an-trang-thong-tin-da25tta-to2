@@ -1,79 +1,87 @@
-
+/* Tổng thể trang web mờ ảo thơ mộng */
 body {
-     background-image: url('../assets/images/shopping.jpg'); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    margin: 0;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
+  background-image: url("../assets/images/pastel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3ebe1;
 }
-
 
 .invoice-box {
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 850px;
-    padding: 40px;
-    border-radius: 12px; 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+  background-color: rgba(255, 253, 247, 0.96);
+  width: 100%;
+  max-width: 750px;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(110, 83, 62, 0.15);
+  border: 2px dashed #dcd1c4;
 }
-
 
 h1 {
-    text-align: center;
-    color: #2c3e50; 
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    border-bottom: 3px solid #3498db;
-    padding-bottom: 15px;
+  text-align: center;
+  color: #5c4033;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 2px dashed #8da47e;
+  padding-bottom: 15px;
 }
 
-/* Cấu trúc bảng */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
-
 
 th {
-    background-color: DarkCyan; 
-    color: #ffffff; 
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 14px;
-    border: none;
+  background-color: #8da47e;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
 }
 
-
 td {
-    padding: 14px;
-    text-align: center;
-    border-bottom: 1px solid #eef2f5; 
-    color: #4a5568;
-    font-size: 15px;
+  padding: 16px 14px;
+  text-align: center;
+  border-bottom: 1px dashed #e6dfd5;
+  color: #6e584a;
+  font-size: 16px;
+}
+
+.item-name {
+  text-align: left;
+  font-weight: 600;
 }
 
 tr:hover td {
-    background-color: Azure; 
+  background-color: #fff9ed;
+  transition: background-color 0.2s ease;
 }
 
 .total-row td {
-    font-weight: bold;
-    font-size: 16px;
-    color: #2c3e50;
-    background-color: #ecf0f1; 
-    border-top: 2px solid #3498db;
+  font-weight: 700;
+  font-size: 18px;
+  color: #5c4033;
+  background-color: #f7f3eb;
+  border-top: 2px solid #8da47e;
+  border-bottom: none;
+  border-radius: 0 0 12px 12px;
 }
 
 #thanhtoan {
-    color: #e74c3c;
-    font-size: 20px;
+  color: #d98a6c;
+  font-size: 22px;
+  font-weight: 700;
 }

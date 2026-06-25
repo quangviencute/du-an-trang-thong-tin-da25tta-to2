@@ -1,54 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-<title>Trang số 3 </title>
-<meta charset ="utf-8">
-<link rel="stylesheet" href="../css/style2.css">
-</head>
-<body>
-         <div class ="container">
-             <form id="frmSignUp" action="page2.html" method="GET">
-			 <h2 id ="title">Đăng ký vào Làng Gốm Bát Tràng</h2>
-              <div class ="form-group">
-            <label for = "txtUsername">Họ và tên: </label>
-                   <input class="form-control" type ="text" id="txtUsername" name="txtUsername">
-             </div>
-			  <div class ="form-group">
-			 <label for = "txtEmail">Email: </label>
-                   <input class="form-control" type ="text" id="txtEmail" name="txtEmail">
-             </div>
-			 <!-- ngày sinh -->
+  <head>
+    <title>Đăng ký vào Làng Gốm Bát Tràng</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/style2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form id="frmSignUp" action="page2.html" method="GET">
+        <h2 id="title">Đăng ký vào Làng Gốm Bát Tràng</h2>
+
         <div class="form-group">
-            <label for="ngaysinh">Ngày sinh</label>
-            <input type="date" id="ngaysinh" name="ngaysinh">
+          <label for="txtUsername">Họ và tên</label>
+          <input
+            class="form-control"
+            type="text"
+            id="txtUsername"
+            name="txtUsername"
+            placeholder="Ví dụ: Chihiro..."
+          />
         </div>
-		<!-- giới tính -->
-			 <div class="form-group">
-            <label>Giới tính:</label>
-            <div class="gender-group">
-                <label class="gender-option">
-                    <input type="radio" name="gender" value="nam"> Nam
-                </label>
-                <label class="gender-option">
-                    <input type="radio" name="gender" value="nu"> Nữ
-                </label>
-            </div>
+
+        <div class="form-group">
+          <label for="txtEmail">Email</label>
+          <input
+            class="form-control"
+            type="text"
+            id="txtEmail"
+            name="txtEmail"
+            placeholder="example@gmail.com"
+          />
         </div>
-  <div class ="form-group">
-            <label for = "txtPhoneNumber">Số điện thoại📞: </label>
-                   <input class="form-control" type ="text" id="txtPhoneNumber" name="txtPhoneNumber">
-             </div>
-  <!-- password và xác nhận lại mật khẩu  -->
-         <div class ="form-group">
-            <label for = "txtPassword">Password: </label>
-                   <input class="form-control" type ="password" id="txtPassword" name="txtPassword">
-             </div>
-	     <div class ="form-group">
-            <label for = "txtPassword">Xác nhận lại password: </label>
-                   <input class="form-control type ="password" id="confirm-Password" name="confirm-Password">
-             </div>
-	<button class="form-button" type="submit">Đăng ký thoai♥️♥️♥️</button>
-</form>
-</div>
-</body>
+
+        <div class="form-group">
+          <label for="ngaysinh">Ngày sinh</label>
+          <input
+            class="form-control"
+            type="date"
+            id="ngaysinh"
+            name="ngaysinh"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Giới tính</label>
+          <div class="gender-group">
+            <label class="gender-option">
+              <input type="radio" name="gender" value="nam" /> <span>Nam</span>
+            </label>
+            <label class="gender-option">
+              <input type="radio" name="gender" value="nu" /> <span>Nữ</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="txtPhoneNumber">Số điện thoại 📞</label>
+          <input
+            class="form-control"
+            type="text"
+            id="txtPhoneNumber"
+            name="txtPhoneNumber"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="txtPassword">Mật khẩu</label>
+          <input
+            class="form-control"
+            type="password"
+            id="txtPassword"
+            name="txtPassword"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-Password">Xác nhận lại mật khẩu</label>
+          <input
+            class="form-control"
+            type="password"
+            id="confirm-Password"
+            name="confirm-Password"
+          />
+        </div>
+
+        <button class="form-button" type="submit">Tham gia ngay thôi ✨</button>
+      </form>
+    </div>
+  </body>
 </html>
